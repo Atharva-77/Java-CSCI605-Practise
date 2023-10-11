@@ -4,16 +4,17 @@ import java.util.Iterator;
 
 public class CollectionsDemo {
     public static void main(String[] args) {
-        Collection values= new ArrayList(); //dynamic array using collections, arraylist
+        Collection <Integer> values= new ArrayList<>(); //dynamic array using collections, arraylist
 
         values.add(12);
-        values.add("Atharva");
-        values.add(3.9);
+        values.add(50);
+        //        values.add("Atharva");
+        //        values.add(3.9);
 
-//        Iterator i= values.iterator();
-//        System.out.println(i.next());
-//        System.out.println(i.next());
-//        System.out.println(i.next());
+        //        Iterator i= values.iterator();
+        //        System.out.println(i.next());
+        //        System.out.println(i.next());
+        //        System.out.println(i.next());
 
         //        or
 
