@@ -1,4 +1,4 @@
-class Container<T>
+class Container<T extends Number> // Only those class used that extends Number.Bounding.
 {
     T value;
     Container(T value){
@@ -13,10 +13,14 @@ class Container<T>
 
 public class GenericsDemo1 {
     public static void main(String[] args) {
-        Container<?> obj= new Container<>("20"); // can put any value
+
+        Container<Integer> obj= new Container<>(20); // integer  extends number
         obj.show();
 
-        Container<Integer> obj1= new Container<>(20); // only integer allowed...type safety
+        Container<Double> obj1= new Container<>(20.5); // Double extends number
         obj1.show();
+
+        Container<String> obj2= new Container<>("20.5"); // String does not extends number
+        obj2.show();
     }
 }
