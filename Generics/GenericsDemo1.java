@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collection;
 
 class Container<T extends Number> // Only those class used that extends Number.Bounding.
 {
@@ -24,7 +25,7 @@ public class GenericsDemo1 {
         Container<Integer> obj= new Container<>(20); // integer created
         obj.show();
 
-        obj.demo(new ArrayList<Number>()); //Number passed
+        obj.demo(new ArrayList<Integer>()); //Number passed
 
     }
 }
