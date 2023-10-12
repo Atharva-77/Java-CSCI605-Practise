@@ -9,16 +9,15 @@ public class CollectionsDemo {
         values.add(new Student(3, 75));
 
         values.add(3, new Student(4,99));
-        Comparator<Student> comp=new CustomComparatorStudentClass();
+//        Comparable<Student> comp=new Student();
 
-        Collections.sort(values,comp);
+        Collections.sort(values);
 
         for(Student i: values){
             System.out.println(i);
         }
     }
 }
-
 class CustomComparatorStudentClass implements Comparator<Student>{
     @Override
     public int compare(Student o1, Student o2) {
@@ -27,7 +26,7 @@ class CustomComparatorStudentClass implements Comparator<Student>{
         return 1;
     }
 }
-class Student{
+class Student implements Comparable<Student>{
 
     int rollNo;
     int marks;
@@ -39,5 +38,11 @@ class Student{
 
     public String toString(){
         return "Student= "+rollNo+ ", Marks= "+marks;
+    }
+
+    public int compareTo(Student o1) {
+        if (this.marks>o1.marks)
+            return -1;
+        return 1;
     }
 }
