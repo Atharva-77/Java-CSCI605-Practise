@@ -1,26 +1,20 @@
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Iterator;
+import java.util.Collections;
+import java.util.List;
 
 public class CollectionsDemo {
     public static void main(String[] args) {
-        Collection <Integer> values= new ArrayList<>(); //dynamic array using collections, arraylist
+        List <Integer> values= new ArrayList<>(); //dynamic array using collections, arraylist
 
         values.add(12);
         values.add(50);
-        //        values.add("Atharva");
-        //        values.add(3.9);
+        values.add(60);
 
-        //        Iterator i= values.iterator();
-        //        System.out.println(i.next());
-        //        System.out.println(i.next());
-        //        System.out.println(i.next());
+        values.add(1,99);
+        Collections.sort(values);
 
-        //        or
-
-        //        enhanced loop
-
-        for(Object i: values){
+        for(int i: values){
             System.out.println(i);
         }
     }
