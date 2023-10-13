@@ -4,12 +4,8 @@ public class CollectionsDemo {
     public static void main(String[] args) {
         List  values= new ArrayList(); //dynamic array using collections, arraylist
 
-        values.add(new Student(1,23));
-        values.add(new Student(2,89));
-        values.add(new Student(3, 75));
-
-        values.add(3, new Student(4,99));
-        values.add(2);
+        values.add(new A());
+        values.add(new B());
 
 //        Comparable<Student> comp=new Student();
 
@@ -19,6 +15,14 @@ public class CollectionsDemo {
             System.out.println(i);
         }
     }
+}
+
+class A{
+
+}
+
+class B{
+
 }
 class Student implements Comparable{
 
