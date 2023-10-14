@@ -48,7 +48,7 @@ public class MyStackUse {
         aMyStack.push(new MyStack<String>());
 // 	bMyStack.push(new MyStack<Integer>());
 /*
-MyStackUse.java:27: error: incompatible types: MyStack<String> cannot be converted to MyStack<Integer>
+MyStackUsee.java:27: error: incompatible types: MyStack<String> cannot be converted to MyStack<Integer>
 	bMyStack.push(new MyStack<String>());
 */
         aMyStack.push(new MyStack() ); // wil not compile
