@@ -28,6 +28,8 @@ public class MyStackUse {
         MyStack<String> aMyStack = new MyStack<String>();
         aMyStack.push("a");
         aMyStack.push("b");
+
+
         while ( ! aMyStack.isEmpty() )	{
             System.out.println(aMyStack.pop());
         }
@@ -58,6 +60,19 @@ MyStackUsee.java:27: error: incompatible types: MyStack<String> cannot be conver
         }
         while ( ! bMyStack.isEmpty() )	{
             System.out.println(bMyStack.pop());
+        }
+
+        Vector<MyStack<Integer>> q=new Vector<>();
+        MyStack <Integer> w1=new MyStack<>();
+        w1.push(23);
+//        MyStack <?> w2=new MyStack<>();
+
+        q.add(w1);
+//        q.add(w2);
+//        q.add(23);
+
+        for (MyStack i:q){
+            System.out.println("I= "+i);
         }
     }
     public static void main(String args[] )	{
