@@ -4,14 +4,16 @@ public class UpperBoundExample<T> {
 
     T theThing;
 
+    // System.out.println("==="+theThing);
     public UpperBoundExample(T theThing)  {
         this.theThing = theThing;
+        System.out.println("==="+theThing);
     }
 
     public static void main(String[] args)	{
         // UpperBoundExample<Square> aSquare = new UpperBoundExample<Square>(new Square());
-        UpperBoundExample<Cube>   aCube   = new UpperBoundExample<Cube>(new Cube());
-        UpperBoundExample<Brick>  aBrick  = new UpperBoundExample<Brick>(new Brick());
+//        UpperBoundExample<Cube>   aCube   = new UpperBoundExample<Cube>(new Cube());
+//        UpperBoundExample<Brick>  aBrick  = new UpperBoundExample<Brick>(new Brick());
 
         // linked list op UpperBoundExample->Brick
         List<UpperBoundExample<Brick>> aList = new LinkedList<UpperBoundExample<Brick>>();
@@ -20,14 +22,16 @@ public class UpperBoundExample<T> {
 
         List<UpperBoundExample<? extends Cube>> cList = new LinkedList<UpperBoundExample<? extends Cube>>();
 
-        // aList.add(new UpperBoundExample<Cube>(new Cube()));
-        // aList.add(new UpperBoundExample<Brick>(new Cube()));
-        // aList.add(new UpperBoundExample(new Cube()));
-        aList.add(new UpperBoundExample(new Brick()));
+        // aList.add(new UpperBoundExample<Cube>(new Brick()));
+//         aList.add(new UpperBoundExample<Brick>(new Cube()));
+//        aList.add(new UpperBoundExample<Cube>(new Cube()));
+//         aList.add(new UpperBoundExample(new Cube()));
+//         aList.add(new UpperBoundExample(new Brick()));
+//        aList.add(new UpperBoundExample<Brick>(new Brick()));
 
 
 
-        // cList.add( new UpperBoundExample(new Cube() ) );
+        // cList.add( new UpperBoundExample<Area>(new Area() ) );
         // cList.add( new UpperBoundExample(new Brick() ) );
         // cList.add( new UpperBoundExample(new Square() ) );
 
