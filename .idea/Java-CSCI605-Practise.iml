@@ -9,6 +9,9 @@
       <sourceFolder url="file://$MODULE_DIR$/Generics/8.10" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Generics/8.11" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Generics/8.14" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Generics/Practise" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Exception" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Generics/8.15" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
