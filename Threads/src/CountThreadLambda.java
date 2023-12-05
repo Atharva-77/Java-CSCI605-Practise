@@ -15,13 +15,13 @@ public class CountThreadLambda {
         Runnable obj1 = () -> {
             for (int i = 0; i < 100; i++) {
                 c.increment();
-                System.out.println("A "+c.counter);
+                System.out.println("A1 "+c.counter);
             }
         };
         Runnable obj2 = () -> {
             for (int i = 0; i < 100; i++) {
                 c.increment();
-                System.out.println("\tB "+c.counter);
+                System.out.println("\tB1 "+c.counter);
             }
         };
         
@@ -37,7 +37,7 @@ public class CountThreadLambda {
         t2.join();
         
 
-        System.out.println("*******************Counter value "+c.counter);
+        System.out.println("*******************CountingNumber value "+c.counter);
 
     }
 }

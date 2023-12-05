@@ -7,11 +7,12 @@ public class MyThread extends Thread {
 
     public void run() {
         try {
-            for (int i=0; i<2;i++ ) {
-                System.out.println(i+" "+name);
-                Thread.sleep(1000);
-                System.out.println("\n"+i+" "+name+"----\n");
-            }
+//            for (int i=0; i<2;i++ ) {
+                System.out.println(" "+name);
+                Thread.sleep(3000);
+                Thread.sleep(3000);
+                System.out.println("\nEBDD"+" "+name+"----\n");
+//            }
         } catch (InterruptedException e) {
             System.out.println("sleep interrupted");
         }
